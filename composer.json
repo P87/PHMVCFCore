@@ -1,0 +1,23 @@
+{
+  "name": "P87/phmvcfcore",
+  "description": "Core files for PHMVCF",
+  "license": "MIT",
+  "keywords": ["MVC", "Framework"],
+  "authors": [
+    {
+      "name": "Peter Hulme",
+      "email": "code@peterhul.me"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "P87\\PHMVCFCore\\": "src/PHMVCFCore/"
+    }
+  }
+}
