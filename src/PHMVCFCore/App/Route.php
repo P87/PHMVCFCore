@@ -18,7 +18,7 @@ class Route
      * @param $data
      * @return $this
      */
-    public function set($uri, $data)
+    public function set($uri, array $data)
     {
         $data['data'] = array();
         $this->routes[$uri] = $data;
@@ -83,7 +83,7 @@ class Route
      * @param $matches
      * @return mixed
      */
-    private function arrangeVars($matches)
+    private function arrangeVars(array $matches)
     {
         foreach (array_keys($matches) as $key ) {
             if ( is_numeric($key) ) {
